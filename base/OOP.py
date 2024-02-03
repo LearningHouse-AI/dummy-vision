@@ -1,17 +1,18 @@
-class dog:
-    attribute = "mamalia"
+# --- Simple Class yang mungkin tidak dipakai ----
+# class myClass :
+#     x = 5
 
-    def __init__(self, name):
+# p1 = myClass()
+# print(p1.x)
+
+# Simple Class dengan function
+class person :
+    def __init__(self, name, age):
         self.name = name
+        self.age = age
 
-    def write(self):
-        print("My name is {}".format(self.name))
+val = person("Any", 20)
 
-rodger = dog("rodger")
-tommy = dog("tommy")
+print(val.name)
+print(val.age)
 
-# print("rodger is a {}".format(rodger.__class__.attribute))
-# print("rodger is a {}".format(tommy.__class__.attribute))
-
-rodger.write()
-tommy.write()
