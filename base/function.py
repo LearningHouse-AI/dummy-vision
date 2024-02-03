@@ -23,8 +23,20 @@ def myFunction7(food):  # auto print dengan for dan in
 def myFunction8(x):         #tes kalkulasi sederhana
     return print (5 * x)
 
-def myFunction9(x, /):
+def myFunction9(x, /):      # tes running
     print(x)
+
+def myFunction10(x):        # tes input value di main
+    print(x)
+
+def recursion(x):
+    if (x > 0 ) :
+        result = x + recursion(x - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
 
 fruits = ["apple", "orange", "melon"]
 
@@ -38,4 +50,7 @@ fruits = ["apple", "orange", "melon"]
 # myFunction6("Malaysian")
 # myFunction7(fruits)
 # myFunction8(8)
-myFunction9(10)
+# myFunction9(10)
+# myFunction10(x = 10)
+print("return recursion results ")
+recursion(10)
